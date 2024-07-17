@@ -1,0 +1,13 @@
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+.piePagina{
+    position: sticky;
+    bottom: 0;
+    background-color: #84abaa;
+    text-align: center;
+    padding: 32px;
+    color: #fff;
+    font-size: 20px;
+}

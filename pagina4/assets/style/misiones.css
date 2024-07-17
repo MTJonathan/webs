@@ -1,0 +1,46 @@
+.misionesContainer{
+    display: flex;
+    padding: 60px 0;
+    justify-content: center;
+    
+}
+table{
+    width: 50%;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    border: 2px solid gray;
+    font-size: 1.5rem;
+    background-color: rgb(197, 197, 197);
+}
+td{
+    border: 2px solid gray;
+    padding: 10px;
+}
+tr{
+    background-color: rgb(197, 197, 197);
+}
+th{
+    padding: 10px;
+    border: 2px solid gray;
+    text-align: start;
+    background-color: rgb(110, 110, 110);
+}
+.nombres{
+    background-color: #A5A4A5;
+}
+tr:hover .nombres{
+    background-color: rgb(205, 205, 205);
+}
+tr:hover{
+    background-color: rgb(205, 205, 205);
+}
+@media(width <= 500px){
+    .misionesContainer{
+        justify-content: start;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    td, th{
+        padding: 0;
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/aprenderas.css">
+    <link rel="stylesheet" href="assets/css/curso.css">
+    <link rel="stylesheet" href="assets/css/plan.css">
+    <link rel="stylesheet" href="assets/css/estudiante.css">
+    <link rel="stylesheet" href="assets/css/preguntas.css">
+    <link rel="stylesheet" href="assets/css/listo.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="inicio" class="banner">
+        <div class="tituloBanner"><h2>Curso CSS</h2></div>
+        <img src="./assets/img/menu.svg" alt="" class="menu">
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aprenderas">Acerca de</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="bannerContainer">
+            <h1>Aprende CSS3 desde CERO hasta dominarlo.</h1>
+            <p>Elige aprender CSS de una vez por todas, una vez que termines este curso serás capaz de crear cualquier layout con CSS y crear tus propias animaciones.</p>
+            <button>Comienza Ahora</button>
+        </div>
+    </header>
+    <main>
+        <section id="aprenderas" class="aprenderas">
+            <h2>¿Quén aprenderás en este curso?</h2>
+            <p>Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Custom properties, Position, Animaciones, Box Model y más)</p>
+            <div class="aprenderasContainer contenedor">
+                <div class="aprenderasItem">
+                    <img src="./assets/img/shapes.svg" alt="">
+                    <h3>CSS Layouts</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore porro eius facilis?</p>
+                </div>
+                <div class="aprenderasItem">
+                    <img src="./assets/img/paint.svg" alt="">
+                    <h3>Animaciones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore porro eius facilis?</p>
+                </div>
+                <div class="aprenderasItem">
+                    <img src="./assets/img/code.svg" alt="">
+                    <h3>Sass</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore porro eius facilis?</p>
+                </div>
+            </div>
+        </section>
+        <section class="curso">
+            <div class="cursoContainer contenedor">
+                <div class="cursoItem">
+                    <h2>Curso completo de CSS3. ¡Domina CSS de una vez por todas!</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, aliquam nemo in facere suscipit at delectus unde labore ad officia iste accusantium eaque aperiam laborum est voluptate totam? Modi, obcaecati?</p>
+                    <button>Entrar al curso</button>
+                </div>
+                <div class="cursoItem">
+                    <img src="./assets/img/macbook.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="plan">
+            <h2>Obten el plan PERFECTO para aprender</h2>
+            <div class="planContainer contenedor">
+                <div class="planItem">
+                    <p class="planP">Flexbox</p>
+                    <h3>Free</h3>
+                    <div class="txtPlanItem">
+                        <p>Flexbox</p>
+                        <p>Layouts</p>
+                        <p>Responsive</p>
+                    </div>
+                    <button>Empieza Ahora</button>
+                </div>
+                <div class="planItem">
+                    <p class="planP">Grid</p>
+                    <h3>$30/mes</h3>
+                    <div class="txtPlanItem">
+                      <p>Grid</p>
+                        <p>Implicit Grid</p>
+                        <p>Responsive</p>  
+                    </div>
+                    <button>Empieza Ahora</button>
+                </div>
+                <div class="planItem">
+                    <p class="planP">Animaciones</p>
+                    <h3>$40/mes</h3>
+                    <div class="txtPlanItem">
+                       <p>Animation</p>
+                        <p>Transition</p>
+                        <p>Render Website</p> 
+                    </div>
+                    <button>Empieza Ahora</button>
+                </div>
+            </div>
+        </section>
+        <section class="estudiantes">
+            <div class="estudiantesContainer contenedor">
+                <img onclick="moveSlide(-1)" src="./assets/img/leftarrow.svg" alt="" class="arrow arrowLeft">
+                <div class="slider">
+                    <div class="sliderItem">
+                        <div class="estudianteItem">
+                            <h2>Mi nombre es Kevin Ramirez, <span>estudiante de CSS.</span></h2>
+                            <p class="estudianteP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        </div>
+                        <div class="estudianteItem estudianteImg">
+                            <img src="./assets/img/face.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sliderItem">
+                        <div class="estudianteItem">
+                            <h2>Mi nombre es Kevin Ramirez, <span>estudiante de CSS.</span></h2>
+                            <p class="estudianteP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        </div>
+                        <div class="estudianteItem estudianteImg">
+                            <img src="./assets/img/face2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sliderItem">
+                        <div class="estudianteItem">
+                            <h2>Mi nombre es Kevin Ramirez, <span>estudiante de CSS.</span></h2>
+                            <p class="estudianteP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        </div>
+                        <div class="estudianteItem estudianteImg">
+                            <img src="./assets/img/face3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sliderItem">
+                        <div class="estudianteItem">
+                            <h2>Mi nombre es Kevin Ramirez, <span>estudiante de CSS.</span></h2>
+                            <p class="estudianteP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        </div>
+                        <div class="estudianteItem estudianteImg">
+                            <img src="./assets/img/face4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img onclick="moveSlide(1)" src="./assets/img/rightarrow.svg" alt="" class="arrow arrowRight">
+            </div>
+        </section>
+        <section class="preguntas">
+            <div class="preguntasContainer contenedor">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro doloribus neque perspiciatis sapiente fuga.</p>
+                <details>
+                    <summary><h3>¿Que es CSS?</h3> <img src="./assets/img/arrow.svg" alt="hola"></summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque?</p>
+                </details>
+                <details>
+                    <summary><h3>¿Qué aprenderé en este curso?</h3> <img src="./assets/img/arrow.svg" alt="hola"></summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque?</p>
+                </details>
+                <details>
+                    <summary><h3>¿Qué es CSS GRID?</h3> <img src="./assets/img/arrow.svg" alt="hola"></summary>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque?</p>
+                </details>
+            </div>
+        </section>
+        <section class="listo contenedor">
+            <h2>¿Estas listo para aprender CSS?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione architecto magnam, officiis ex porro vero est voluptates quaerat quibusdam illo veniam reprehenderit eius atque tempora iure ab non autem.</p>
+            <button>Aprender ahora</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footerContainer contenedor">
+            <div class="footerItem">
+                <h2>Curso CSS.</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#aprenderas">Acerca de</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerItem">
+                <h2>Suscribete a la newsletter</h2>
+                <div class="registrate">
+                    <input type="text" placeholder="Email">
+                    <button>Registrate</button>
+                </div>
+            </div>
+        </div>
+        <div class="redes">
+            <div class="imgRedes">
+                <img src="./assets/img/facebook.svg" alt="">
+                <img src="./assets/img/twitter.svg" alt="">
+                <img src="./assets/img/youtube.svg" alt="">
+            </div>
+            <div class="txtRedes">
+                Derechos Reservados &copy; CEO de la empresa
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+</html>

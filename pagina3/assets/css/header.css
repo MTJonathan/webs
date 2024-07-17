@@ -1,0 +1,132 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.menu{
+    position: absolute;
+    display: none;
+    width: 32px;
+    height: 32px;
+    margin:28px 50px;
+    right: 0;
+}
+.banner{
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 65%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/computer.jpg'), url(../img/computer.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    background-size: cover;
+}
+.tituloBanner{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 60px;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin-right: 60px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.bannerContainer{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 58%;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+.bannerContainer h1{
+    font-size: 45px;
+}
+.bannerContainer button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2091F9;
+    color: white;
+    font-weight: 600;
+    margin-top: 32px;
+}
+@media(width <= 920px){
+    .bannerContainer{
+        width: 85%;
+    }
+    .bannerContainer h1{
+        font-size: 38px;
+    }
+    .bannerContainer p{
+        font-size: 14px;
+    }
+    .menu{
+        display: block;
+    }
+    .nav{
+        position: absolute;
+        width: 32%;
+        height: 100%;
+        right: 0px;
+        background-image: linear-gradient(to bottom, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+        transform: translateX(100%);
+        transition: all 0.5s ease-out;
+    }
+    .nav ul{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        translate: 40px -20px;
+        flex-direction: column;
+    }
+    .active{
+        transform: translateX(0);
+    }
+}
+@media(width <= 630px){
+    .bannerContainer h1{
+        font-size: 32px;
+    }
+    .bannerContainer p{
+        font-size: 12px;
+    }
+    .bannerContainer button{
+        margin-top: 15px;
+    }
+    .menu{
+        margin-right: 10px;
+    }
+    .nav{
+        width: 60%;
+    }
+    .tituloBanner{
+        margin-left: 10px;
+    }
+}

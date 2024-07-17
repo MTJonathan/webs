@@ -1,0 +1,91 @@
+.btnMenu button{
+    background-color: transparent;
+    border: none;
+    padding: 20px 32px;
+}
+.activeBtn{
+    font-weight: 800;
+    border-bottom: 2px solid #491D20 !important;
+}
+.utileria{
+    background-color: #0d0d0d;
+    margin-top: 50px;
+}
+.utileriaContainer{
+    display: grid;
+    grid-template-columns: 45px 1fr 45px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 32px;
+}
+.sliderContainer{
+    display: none;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    position: relative;
+}
+.active-slider{
+    display: block;
+}
+.leftArrow, .rightArrow{
+    font-size: 45px;
+    cursor: pointer;
+    color: #491D20;
+}
+.sliderInner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.itemSlider{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    min-width: 33.5%;
+    height: 100%;
+}
+.nuevo{
+    width: 70px;
+    text-align: center;
+    padding: 3px;
+    grid-column: span 2;
+    border: solid 2px #4F4F4E;
+    border-radius: 20px;
+}
+.sliderImg img{
+    width: 100%;
+    -webkit-user-drag: none;
+}
+.sliderTxt h2{
+    font-size: 20px;
+}
+.sliderTxt p{
+    font-size: 13px;
+}
+
+@media(width <= 950px){
+    .itemSlider{
+        min-width: 50%;
+    }
+}
+@media(width <= 660px){
+    .itemSlider{
+        min-width: 100%;
+    }
+}
+@media(width <= 480px){
+    .btnMenu button{
+        padding: 20px 8px;
+    }
+    .sliderTxt h2{
+        font-size: 15px;
+    }
+    .sliderTxt p{
+        font-size: 10px;
+    }
+}

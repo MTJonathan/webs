@@ -1,0 +1,21 @@
+.expertos{
+    padding-top: 60px;
+}
+.expertosContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.expertosItem{
+    width: 85%;
+    text-align: center;
+}
+@media(width <= 650px){
+    .expertosContainer{
+        grid-template-columns: 1fr;
+        gap: 23px;
+    }
+    .expertosItem{
+        width: 50%;
+    }
+}

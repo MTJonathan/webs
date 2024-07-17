@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/37b998a6bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/Style/index/header.css">
+    <link rel="stylesheet" href="./assets/Style/index/css.css">
+    <link rel="stylesheet" href="./assets/Style/bordes/bordes.css">
+    <link rel="stylesheet" href="./assets/Style/textos/textos.css">
+    <link rel="stylesheet" href="./assets/Style/fondos/fondos.css">
+    <link rel="stylesheet" href="./assets/Style/animaciones/animaciones.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <header class="banner">
+        <img src="./assets/img/index/menu.svg" alt="" class="menu">
+        <nav class="nav">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#bordes"><i class="fa-regular fa-square"></i> Bordes</a></li>
+                <li><a href="#textos"><i class="fa fa-font"></i> Textos</a></li>
+                <li><a href=""><i class="fa-regular fa-image"></i> Fondos</a></li>
+                <li><a href=""><i class="fa-solid fa-film"></i> Animaciones</a></li>
+            </ul>
+        </nav>
+        <div class="bannerContainer">
+            <h1>Ejemplos de CSS</h1>
+            <h2>En este sitio encontrareas ejemplos de CSS</h2>
+        </div>
+        <div class="wapes" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,50.10 C150.00,150.33 349.20,-50.10 500.00,50.10 L500.00,150.33 L0.00,150.33 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        <script src="./assets/js/menu.js"></script>
+    </header>
+    <main>
+        <section id="home" class="css">
+            <div class="cssContainer contenedor">
+                <div class="cssItem">
+                    <h2>¿Que es CSS?</h2>
+                    <p>Las hojas de estilo en cascada (CSS, cascading style sheets) permiten crear páginas web atractivas. Pero <span>¿cómo funcionan realmente?</span> En este artículo explicaremos qué es el CSS con un ejemplo de sintaxis sencillo y describiremos algunos términos clave sobre este lenguaje.</p>
+                    <h3>Links de Interés:</h3>
+                    <div class="linksContainer">
+                        <p class="links">
+                            <a href="https://paletadecolores.com.ar/">Paleta de Colores</a>
+                            <a href="https://shadows.brumm.af/">Generador de Sombras</a>
+                            <a href="https://fontjoy.com/">Fuentes Compatibles</a>
+                            <a href="https://cssgradient.io/">Generador de gradientes</a>
+                        </p>
+                        <p class="links">
+                            <a href="https://www.cssgradienttext.com/">Texto degradado</a>
+                            <a href="https://fontawesome.com/">Fuentes e Iconos</a>
+                            <a href="https://getbootstrap.com/docs/3.3/components/">Glyphicons de Boostrap</a>
+                            <a href="https://fonts.google.com/">Google Fonts</a>
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="cssItem">
+                    <img src="./assets/img/index/cssImg.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="bordes" class="bordes">
+            <header class="contenedor">
+                <h2>Bordes y sus estilos</h2>
+                <p>Los bordes en CSS se utilizan para definir y estilizar los contornos de los elementos HTML. Las propiedades de los bordes permiten controlar el ancho, el estilo y el color de los bordes.</p>
+            </header>
+            <div class="bordesContainer contenedor">
+                <div class="bordesItem">
+                    <div class="bordesCI solid">
+                        <h3>Solid</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI dotted">
+                        <h3>Dotted</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI dashed">
+                        <h3>Dashed</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI double">
+                        <h3>Double</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI groove">
+                        <h3>Groove</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI ridge">
+                        <h3>Ridge</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI inset">
+                        <h3>Inset</h3>
+                    </div>
+                </div>
+                <div class="bordesItem">
+                    <div class="bordesCI outset">
+                        <h3>Outset</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="textos" class="textos">
+            <div class="textosContainer contenedor">
+                <div class="textosItem">
+                    <h3>Transformación <span>(Text-transform:)</span></h3>
+                    <div class="txtTextos">
+                        <h4>Transformation uppercase</h4>
+                        <p class="uppercase">La propiedad text-transform en CSS se utiliza para controlar la capitalización del texto de un elemento. Uno de los valores más comunes para esta propiedad es uppercase, que convierte todo el texto del elemento seleccionado a mayúsculas.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4>Transformation lowercase</h4>
+                        <p class="lowercase">La propiedad text-transform en CSS también puede utilizarse para convertir todo el texto de un elemento a minúsculas utilizando el valor lowercase. Esto es útil para asegurarse de que todo el texto se muestre en letras minúsculas.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4>Transformation capitalize</h4>
+                        <p class="capitalize">La propiedad text-transform en CSS puede utilizarse para convertir la primera letra de cada palabra a mayúscula utilizando el valor capitalize. Esto es útil cuando deseas que el texto se muestre en formato de título o capitalizado.</p>
+                    </div>
+                </div>
+                <div class="textosItem">
+                    <h2>Texto y sus estilos</h2>
+                    <p>En CSS, los estilos de texto se utilizan para controlar la apariencia del texto en una página web. Esto incluye propiedades para la fuente, tamaño, color, alineación, espaciado y otros efectos. </p>
+                    <ol>
+                        <li><span>Color:</span> Define el color del texto.</li>
+                        <li><span>Font-family:</span> Especifica la familia de fuentes para el texto. Puede incluir varias fuentes como una lista de respaldo.</li>
+                        <li><span>Font-size:</span> Define el tamaño del texto. Puede especificarse en unidades como píxeles (px), em (em), rem (rem), porcentajes (%), etc.</li>
+                        <li><span>Font-weight:</span> Define el grosor del texto. Los valores comunes incluyen normal, bold, y números de 100 a 900.</li>
+                        <li><span>Font-style:</span> Define el estilo de la fuente. Los valores comunes son normal, italic, y oblique.</li>
+                        <li><span>Text-align:</span> Define la alineación del texto. Los valores comunes son left, right, center, y justify.</li>
+                        <li><span>Text-decoration:</span> Define las decoraciones del texto, como subrayado, sobrelineado y tachado. Los valores comunes son none, underline, overline, y line-through.</li>
+                        <li><span>Line-height:</span> Define la altura de la línea del texto, afectando el espaciado entre las líneas de texto.</li>
+                        <li><span>Letter-spacing:</span> Define el espaciado entre los caracteres del texto.</li>
+                        <li><span>Word-spacing:</span> Define el espaciado entre las palabras del texto.</li>
+                        <li><span>Text-transform:</span> Controla la capitalización del texto. Los valores comunes son none, capitalize, uppercase, y lowercase.</li>
+                        <li><span>Text-shadow:</span> Aplica una sombra al texto. Se pueden especificar valores para el desplazamiento horizontal y vertical, el desenfoque y el color.</li>
+                        <li><span>White-space:</span> Controla cómo se maneja el espacio en blanco dentro del texto. Los valores comunes son normal, nowrap, pre, pre-wrap, y pre-line.</li>
+                    </ol>
+                </div>
+                <div class="textosItem ejemplos">
+                    <h3>Alineamiento <span>(Text-align:)</span></h3>
+                    <div class="txtTextos left">
+                        <h4>Alignment Left</h4>
+                        <p>La propiedad text-align en CSS se utiliza para controlar la alineación del texto dentro de un elemento. Uno de los valores más comunes es left, que alinea el texto hacia la izquierda del contenedor.</p>
+                    </div>
+                    <div class="txtTextos right">
+                        <h4>Alignment Right</h4>
+                        <p>La propiedad text-align en CSS se utiliza para controlar la alineación del texto dentro de un elemento. Uno de los valores más comunes es right, que alinea el texto hacia la derecha del contenedor.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4>Alignment Center</h4>
+                        <p>La propiedad text-align en CSS se utiliza para controlar la alineación del texto dentro de un elemento. Uno de los valores más comunes es center, que centra el texto horizontalmente dentro del contenedor.</p>
+                    </div>
+                    <div class="txtTextos justify">
+                        <h4>Alignment Justify</h4>
+                        <p>La propiedad text-align en CSS se utiliza para controlar la alineación del texto dentro de un elemento. El valor justify justifica el texto, distribuyendo el espacio entre las palabras para que el texto ocupe todo el ancho del contenedor, lo que crea un borde recto en ambos lados.</p>
+                    </div>
+                </div>
+                <div class="textosItem ejemplos">
+                    <h3>Subrayado <span>(Text-decoration:)</span></h3>
+                    <div class="txtTextos overline">
+                        <h4>Decoration overline</h4>
+                        <p>La propiedad text-decoration en CSS se utiliza para aplicar decoraciones al texto, como subrayado, tachado, o una línea encima del texto. El valor overline añade una línea por encima del texto.</p>
+                    </div>
+                    <div class="txtTextos line-through">
+                        <h4>Decoration line-through</h4>
+                        <p>La propiedad text-decoration en CSS se utiliza para aplicar decoraciones al texto, como subrayado, tachado, o una línea encima del texto. El valor line-through añade una línea a través del texto, lo que se conoce comúnmente como tachado.</p>
+                    </div>
+                    <div class="txtTextos underline">
+                        <h4>Decoration underline</h4>
+                        <p>La propiedad text-decoration en CSS se utiliza para aplicar decoraciones al texto, como subrayado, tachado o una línea encima del texto. El valor underline añade una línea debajo del texto, lo que se conoce comúnmente como subrayado.</p>
+                    </div>
+                    <div class="txtTextos overline-underline">
+                        <h4>Decoration overline-underline</h4>
+                        <p>La propiedad text-decoration en CSS permite aplicar múltiples decoraciones al texto, como subrayado, una línea encima del texto, o ambas. Para añadir tanto una línea debajo del texto como una línea encima del texto, puedes combinar los valores overline y underline.</p>
+                    </div>
+                </div>
+                <div class="textosItem ejemplos">
+                    <h3>Fuentes <span>(Font-family:)</span></h3>
+                    <div class="txtTextos">
+                        <h4 class="serif">Font type Serif</h4>
+                        <p class="serif">Las fuentes Serif son un tipo de tipografía caracterizada por tener pequeños adornos o líneas en los extremos de los caracteres. Estas decoraciones, conocidas como "serifas", proporcionan un aspecto clásico y formal al texto. Las fuentes Serif se utilizan comúnmente en impresos, libros y publicaciones académicas.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4 class="sans-serif">Font type Sans-Serif</h4>
+                        <p class="sans-serif">Las fuentes Sans-Serif son un tipo de tipografía que no tiene las pequeñas decoraciones o líneas en los extremos de los caracteres que se encuentran en las fuentes Serif. "Sans" significa "sin" en francés, por lo que "Sans-Serif" literalmente significa "sin serifas". Estas fuentes suelen tener un aspecto limpio y moderno, y son comúnmente utilizadas en diseño web y interfaces digitales debido a su legibilidad en pantallas.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4 class="monospace">Font type Monospace</h4>
+                        <p class="monospace">Las fuentes Monospace son un tipo de tipografía donde cada carácter ocupa el mismo ancho horizontalmente, lo que significa que todos los caracteres, incluyendo letras, números y signos de puntuación, ocupan el mismo espacio en la línea. Este tipo de fuente es útil en situaciones donde la alineación precisa de texto es importante, como en programación, tablas y documentos donde se necesita una estructura de columna clara y uniforme.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4 class="cursive">Font type Cursive</h4>
+                        <p class="cursive">Las fuentes Cursive en CSS se refieren a tipografías diseñadas para imitar la apariencia de la escritura a mano cursiva o manuscrita. Estas fuentes suelen tener conexiones entre las letras y un flujo que imita el trazo de un bolígrafo o un rotulador. Se utilizan principalmente para añadir un toque personal o artístico a los textos en aplicaciones web y diseños creativos.</p>
+                    </div>
+                    <div class="txtTextos">
+                        <h4 class="fantasy">Font type Fantasy</h4>
+                        <p class="fantasy">Las fuentes Fantasy en CSS se refieren a tipografías decorativas y no convencionales que suelen tener diseños extravagantes, creativos o temáticos. Estas fuentes están diseñadas para llamar la atención y agregar un toque distintivo a los textos en diseños gráficos y páginas web donde se busca un estilo único y visualmente impactante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fondos">
+            <h2 class="contenedor">Fondos y sus Estilos</h2>
+            <div class="fondosContainer contenedor">
+                <div class="fondosItem">
+                    <div class="fondoTamano fondoPlano">
+                        <h3>Fondo Plano</h3>
+                    </div>
+                </div>
+                <div class="fondosItem">
+                    <div class="fondoTamano fondoGradiente">
+                        <h3>Fondo Gradiente</h3>
+                    </div>
+                </div>
+                <div class="fondosItem">
+                    <div class="fondoTamano fondoImge">
+                        <h3>Fondo con Imagen</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="animaciones">
+            <h2 class="contenedor">Animaciones</h2>
+            <div class="animacionesContainer contenedor">
+                <div class="animacionesItem">
+                    <h3>Linear:</h3>
+                    <img src="./assets/img/animaciones/auto.webp" alt="" class="linear">
+                </div>
+                <div class="animacionesItem">
+                    <h3>Ease:</h3>
+                    <img src="./assets/img/animaciones/auto.webp" alt="" class="ease">
+                </div>
+                <div class="animacionesItem">
+                    <h3>Ease-In</h3>
+                    <img src="./assets/img/animaciones/auto.webp" alt="" class="ease-in">
+                </div>
+                <div class="animacionesItem">
+                    <h3>Ease-Out</h3>
+                    <img src="./assets/img/animaciones/auto.webp" alt="" class="ease-out">
+                </div>
+                <div class="animacionesItem">
+                    <h3>Ease-In-Out</h3>
+                    <img src="./assets/img/animaciones/auto.webp" alt="" class="ease-in-out">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

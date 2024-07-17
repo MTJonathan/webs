@@ -1,0 +1,52 @@
+.vida h2{
+    padding: 20px;
+}
+.titulo{
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+}
+.vidaContainer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.vidaItem{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding: 20px;
+}
+.vidaItem img{
+    width: 80%;
+}
+.vidaImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vidaitemRight{
+    padding-left: 0;
+}
+.vidaContainer:nth-child(3){
+    grid-template-columns: 1fr 2fr;
+}
+@media(width <= 800px){
+    .vida h2{
+        text-align: center;
+    }
+    .titulo{
+        text-align: center;
+    }
+    .vidaContainer{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .vidaContainer:nth-child(3){
+        grid-template-columns: 1fr;
+    }
+    .vidaItem img{
+        width: 70%;
+    }
+    .vidaitemRight{
+        grid-row: 1;
+    }
+}

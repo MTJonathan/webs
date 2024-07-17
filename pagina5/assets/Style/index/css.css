@@ -1,0 +1,47 @@
+.cssContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.cssItem h2{
+    font-size: 32px;
+    color: #001A49;
+}
+.cssItem p{
+    margin-top: 15px;
+}
+.cssItem p span{
+    background-color:blueviolet;
+    border-radius: 5px;
+    padding: 1px;
+    color: white;
+    font-weight: 700;
+}
+.cssItem h3{
+    margin-top: 15px;
+    font-size: 23px;
+    color: #001A49;
+}
+.cssItem:last-child{
+    display: grid;
+    place-items: center;
+}
+.cssItem img{
+    width: 90%;
+    border-radius: 13px;
+}
+.linksContainer{
+    display: flex;
+    gap: 23px;
+}
+.cssItem .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media(width <= 880px){
+    .cssContainer{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}

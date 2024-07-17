@@ -1,0 +1,104 @@
+.animaciones h2{
+    text-align: center;
+    font-size: 32px;
+    color: #001A49;
+    padding-bottom: 32px;
+}
+.animacionesItem img{
+    width: 100px;
+}
+.animacionesItem{
+    color: #001A49;
+}
+.linear{
+    animation: mover 2s linear alternate infinite;
+}
+.ease{
+    animation: mover 2s ease alternate infinite;
+}
+.ease-in{
+    animation: mover 2s ease-in alternate infinite;
+}
+.ease-out{
+    animation: mover 2s ease-out alternate infinite;
+}
+.ease-in-out{
+    animation: mover 2s ease-in-out alternate infinite;
+}
+@keyframes mover{
+    100%{
+        transform: translateX(700px);
+    }
+}
+@keyframes mover2{
+    100%{
+        transform: translateX(500px);
+    }
+}
+@keyframes mover3{
+    100%{
+        transform: translateX(300px);
+    }
+}
+@keyframes mover4{
+    100%{
+        transform: translateX(200px);
+    }
+}
+@media(width <= 890px){
+    .linear{
+        animation: mover2 2s linear alternate infinite;
+    }
+    .ease{
+        animation: mover2 2s ease alternate infinite;
+    }
+    .ease-in{
+        animation: mover2 2s ease-in alternate infinite;
+    }
+    .ease-out{
+        animation: mover2 2s ease-out alternate infinite;
+    }
+    .ease-in-out{
+        animation: mover2 2s ease-in-out alternate infinite;
+    }
+}
+@media(width <= 667px){
+    .animacionesItem img{
+        width: 70px;
+    }
+    .linear{
+        animation: mover3 1.5s linear alternate infinite;
+    }
+    .ease{
+        animation: mover3 1.5s ease alternate infinite;
+    }
+    .ease-in{
+        animation: mover3 1.5s ease-in alternate infinite;
+    }
+    .ease-out{
+        animation: mover3 1.5s ease-out alternate infinite;
+    }
+    .ease-in-out{
+        animation: mover3 1.5s ease-in-out alternate infinite;
+    }
+}
+@media(width <= 440px){
+    /* .animacionesItem img{
+        width: 50px;
+    } */
+    .linear{
+        animation: mover4 1s linear alternate infinite;
+    }
+    .ease{
+        animation: mover4 1s ease alternate infinite;
+    }
+    .ease-in{
+        animation: mover4 1s ease-in alternate infinite;
+    }
+    .ease-out{
+        animation: mover4 1s ease-out alternate infinite;
+    }
+    .ease-in-out{
+        animation: mover4 1s ease-in-out alternate infinite;
+    }
+}

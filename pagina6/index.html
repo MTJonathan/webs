@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/37b998a6bd.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/utileria.css">
+    <link rel="stylesheet" href="./assets/css/informacion.css">
+    <link rel="stylesheet" href="./assets/css/horario.css">
+    <link rel="stylesheet" href="./assets/css/mapa.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="inicio" class="header">
+        <section class="navSection contenedor">
+            <img src="./assets/img/menu.png" alt="" class="menu">
+            <nav class="nav navLeft">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                </ul>
+            </nav>
+            <div class="navLogo">
+                <img src="./assets/img/logo.svg" alt="">
+            </div>
+            <nav class="nav navRight">
+                <ul>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="productos">
+            <div class="productosContainer contenedor"> 
+                <!--  -->
+                <div class="arrow arrowLeft"> <p class="arrowLeftP"> < </p> </div>
+                <div class="productosItem">
+                    <div class="slider">
+                        <div class="sliderItem">
+                            <div class="txtSlider">
+                                <h2>Hamburguesa</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, est molestias.</p>
+                                <button>Comprar</button><button>Menu</button>
+                            </div>
+                            <div class="imgSlider">
+                                <img src="./assets/img/slider1.png" alt="" draggable="false">
+                            </div>
+                        </div>
+                        <div class="sliderItem">
+                            <div class="txtSlider">
+                                <h2>Torta</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, est molestias.</p>
+                                <button>Comprar</button><button>Menu</button>
+                            </div>
+                            <div class="imgSlider">
+                                <img src="./assets/img/slider2.png" alt="" draggable="false">
+                            </div>
+                        </div>
+                        <div class="sliderItem">
+                            <div class="txtSlider">
+                                <h2>Hamburguesa</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, est molestias.</p>
+                                <button>Comprar</button><button>Menu</button>
+                            </div>
+                            <div class="imgSlider">
+                                <img src="./assets/img/slider3.png" alt="" draggable="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow arrowRight"> <p class="arrowRightP"> > </p> </div>
+            </div>
+            <ul class="indicators">
+                <li class="indicator"></li>
+                <li class="indicator"></li>
+                <li class="indicator"></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section id="servicios" class="utileria">
+            <div class="btnMenu contenedor">
+                <button data-target="hamburguesa" class="activeBtn">Hamburguesas</button>
+                <button data-target="burritos">Burritos</button>
+                <button data-target="variedad">Variedad</button>
+            </div>
+            <div class="utileriaContainer contenedor">
+                <div class="utileriaArrow"><p class="leftArrow"> < </p></div>
+                <!-- Slider de Hamburguesas, activo por defecto -->
+                <div id="hamburguesa" class="sliderContainer">
+                    <div class="sliderInner">
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food1.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food2.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food3.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food1.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food2.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food3.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider de Burritos -->
+                <div id="burritos" class="sliderContainer">
+                    <div class="sliderInner">
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food4.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food5.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food6.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food4.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food5.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food6.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider de Variedad -->
+                <div id="variedad" class="sliderContainer">
+                    <div class="sliderInner">
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food7.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food8.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food9.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food7.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food8.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>   
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                        <div class="itemSlider">
+                            <div class="nuevo"><p>Nuevo</p></div>
+                            <div class="sliderImg"><img src="./assets/img/food9.png" alt=""></div>
+                            <div class="sliderTxt">
+                                <h2>PRODUCTO</h2>
+                                <p class="descripcion">Calidad Premiun</p>
+                                <p class="precio">$80.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="utileriaArrow"><p class="rightArrow"> > </p></p></div>
+            </div>
+        </section>
+
+        <section id="productos" class="informacion">
+            <div class="informacionContainer contenedor">
+                <div class="imgInformacion">
+                    <img src="./assets/img/info.png" alt="">
+                </div>
+                <div class="txtInformacion">
+                    <h2>INFORMACIÓN</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium vel quía amet. voluptas commodi magnam sint. Optio quasi eligendi vitae reprehenderit quod, sequi error molestias accusantium velit consequatur rerum.</p>
+                    <button>MÁS INFORMACIÓN</button>
+                </div>
+            </div>
+        </section>
+        <section id="horarios" class="horario">
+            <header class="contenedor"><h2>HORARIO</h2></header>
+            <div class="horarioContainer contenedor">
+                <div class="direccion horarioItem">
+                    <h3>Dirección</h3>
+                    <p>LOREM IPSUM DOLOR</p>
+                    <P>LOREM IPSUM DOLOR SIT AMET CONSECTETUR</P>
+                </div>
+                <div class="horario horarioItem">
+                    <h3>Horario</h3>
+                    <p>LUNES A VIERNES: 9:00 AM - 8:00 PM</p>
+                    <p>SABADO Y DOMINGO: 11:00 AM - 7:00 PM</p>
+                </div>
+                <div class="telefono horarioItem">
+                    <h3>Telefono</h3>
+                    <P>5555555555</P>
+                    <P>5555555555</P>
+                </div>
+                <div class="redes horarioItem">
+                    <h3>Redes</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.7521807874305!2d-77.04246292577953!3d-11.922327139594609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d04472a845e1%3A0x488939549f57dd99!2sJir%C3%B3n%20Gregorio%20Miranda%20323%2C%20Comas%2015326!5e0!3m2!1ses-419!2spe!4v1721228345992!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerItem"><img src="./assets/img/logo.svg" alt=""></div>
+            <div class="footerItem">
+                <h3>Lorem</h3>
+                <p>lorem</p>
+                <p>lorem</p>
+                <p>lorem</p>
+                <p>lorem</p>
+            </div>
+            <div class="footerItem">
+                <h3>Lorem</h3>
+                <p>lorem</p>
+                <p>lorem</p>
+                <p>lorem</p>
+                <p>lorem</p>
+            </div>
+            <div class="footerItem">
+                <h3>Lorem</h3>
+                <p>lorem</p>
+                <p>lorem</p>
+                <p>lorem</p>
+                <p>lorem</p>
+            </div>
+            <div class="footerItem">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/cargarSlider.js"></script>
+    <script src="./assets/js/slider2.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/menu.js"></script>
+</body>
+</html>

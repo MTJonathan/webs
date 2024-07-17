@@ -1,0 +1,36 @@
+.aprenderas{
+    text-align: center;
+}
+.aprenderas h2{
+    margin-top: 80px;
+    margin-bottom: 23px;
+    color: #001A49;
+    font-size: 32px;
+}
+.aprenderasContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 50px;
+}
+.aprenderasItem img{
+    width: 45px;
+}
+@media(width <= 900px){
+    .aprenderasContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .aprenderasItem:last-child{
+        grid-column: span 2;
+        width: 50%;
+    }
+}
+@media (width <= 500px){
+    .aprenderasContainer{
+        grid-template-columns: 1fr;
+    }
+    .aprenderasItem:last-child{
+        grid-column: span 1;
+        width: 100%;
+    }
+}

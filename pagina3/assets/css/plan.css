@@ -1,0 +1,97 @@
+.plan h2{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 23px;
+    color: #001A49;
+    font-size: 32px;
+}
+.planContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    place-items: center;
+}
+.planItem{
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background-color: #E4E5F6;
+    width: 80%;
+    height: 90%;
+}
+.planItem h3{
+    font-size: 32px;
+}
+.txtPlanItem{
+    display: grid;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #696871;
+}
+.planP{
+    translate: 0 20px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.planItem button{
+    color: #5454D4;
+    background-color: white;
+    border-radius: 6px;
+    width: 80%;
+    padding: 20px 0;
+    font-weight: 700;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    border: none;
+    margin-bottom: 28px;
+}
+.planItem:nth-child(2){
+    color: white;
+    background-color: #FE7142;
+    scale: 1.2;
+}
+.planItem:nth-child(2) .txtPlanItem{
+    color: white;
+}
+.planItem:nth-child(2) button{
+    color: white;
+    background-color: #9E3918;
+}
+@media(width <= 950px){
+    .planContainer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 450px);
+    }
+    .planItem:nth-child(2){
+        scale: 1.1;
+    }
+    .planItem:nth-child(3){
+        grid-column: span 2;
+        width: 40%;
+    }
+}
+@media(width <= 700px){
+    .planContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 450px);
+    }
+    .planItem{
+        width: 70%;
+    }
+    .planItem:nth-child(3){
+        grid-column: span 1;
+        width: 70%;
+    }
+}
+@media(width <= 500px){
+    .planItem{
+        width: 100%;
+    }
+    .planItem:nth-child(2){
+        scale: 1;
+    }
+    .planItem:nth-child(3){
+        width: 100%;
+    }
+}

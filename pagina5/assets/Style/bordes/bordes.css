@@ -1,0 +1,55 @@
+.bordes header{
+    text-align: center;
+    padding-bottom: 32px;
+}
+.bordes header h2{
+    font-size: 32px;
+    color: #001A49;
+    margin-bottom: 20px;
+}
+.bordesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 23px;
+}
+.bordesCI{
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 150px;
+}
+.solid{
+    border: 5px solid #001A49;
+}
+.dotted{
+    border: 5px dotted #001A49;
+}
+.dashed{
+    border: 5px dashed #001A49;
+}
+.double{
+    border: 5px double #001A49;
+}
+.groove{
+    border: 5px groove #001A49;
+}
+.ridge{
+    border: 5px ridge #001A49;
+}
+.inset{
+    border: 5px inset #001A49;
+}
+.outset{
+    border: 5px outset #001A49;
+}
+@media(width <= 650px){
+    .bordesContainer{
+        grid-template-columns: 1fr 1fr
+    }
+}
+@media(width <= 400px){
+    .bordesContainer{
+        grid-template-columns: 1fr
+    }
+}

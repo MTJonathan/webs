@@ -1,0 +1,69 @@
+.estudiantes{
+    background-color: #e5e5f7;
+}
+.estudiantesContainer{
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    place-items: center;
+    gap: 50px
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+.sliderItem{
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    scroll-snap-align: start;
+}
+
+.estudiantesContainer .arrow{
+    width: 40px;
+    cursor: pointer;
+}
+.estudianteItem img{
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.estudianteItem h2{
+    font-size: 38px;
+    margin: 20px 0;
+}
+.estudianteItem h2 span{
+    background-color: #2091F9;
+    color: white;
+}
+@media(width <= 760px){
+    .sliderItem{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+@media(width <= 500px){
+    .estudiantesContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .estudianteItem h2{
+        font-size: 32px;
+    }
+    .estudianteItem p{
+        font-size: 13px;
+    }
+    .estudianteItem img{
+        width: 200px;
+        height: 200px;
+    }
+    .slider{
+        grid-column: span 2;
+    }
+    .arrowLeft{
+        grid-row: 2;
+    }
+}

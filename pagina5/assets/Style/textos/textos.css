@@ -1,0 +1,166 @@
+.textosContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.textosContainer .textosItem:first-child{
+    display: grid;
+    gap: 20px;
+}
+.textosContainer .textosItem h3{
+    text-align: center;
+    font-size: 23px;
+    color: #001A49;
+}
+.textosContainer .textosItem span{
+    background-color: #270979;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.textosContainer .textosItem:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.textosContainer .textosItem:nth-child(2) h2{
+    font-size: 32px;
+    color: #001A49;
+}
+.textosContainer .textosItem:nth-child(2)  p{
+    font-size: 14.5px
+}
+.textosContainer .textosItem:nth-child(2) ol li{
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.textosContainer .textosItem:nth-child(2) ol li span{
+    color: white;
+    background-color: blueviolet;
+    font-weight: 700;
+    padding: 3px;
+    border-radius: 5px;
+}
+.ejemplos{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+.ejemplos h3{
+    grid-column: span 4;
+}
+.ejemplos:last-child{
+    grid-template-columns: repeat(5, 1fr);
+}
+.ejemplos:last-child h3{
+    grid-column: span 5;
+}
+.textosContainer .textosItem .txtTextos{
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    color: white;
+    padding: 25px;
+    background-color:#270979;
+    border-radius: 23px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.justify{
+    text-align: justify;
+}
+.overline{
+    text-decoration: overline;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.underline{
+    text-decoration: underline;
+}
+.overline-underline{
+    text-decoration: overline underline;
+}
+.serif{
+    font-family: serif;
+}
+.sans-serif{
+    font-family: sans-serif;
+}
+.monospace{
+    font-family: monospace;
+}
+.cursive{
+    font-family: cursive;
+}
+.fantasy{
+    font-family: fantasy;
+}
+@media(width <= 950px){
+    .ejemplos{
+        grid-column: span 2;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ejemplos h3{
+        grid-column: span 2;
+    }
+    .ejemplos:last-child{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .ejemplos:last-child h3{
+        grid-column: span 3;
+    }
+}
+@media(width <= 800px){
+    .textosContainer{
+        grid-template-columns: 1fr;
+    }
+    .textosContainer .textosItem:first-child{
+        grid-column: span 2;
+    }
+    .textosItem:nth-child(2){
+        grid-column: span 2;
+        grid-row: 1;
+    }
+}
+@media(width <= 600px){
+    .textosContainer .textosItem:first-child{
+        grid-column: span 3;
+    }
+    .textosItem:nth-child(2){
+        grid-column: span 3;
+    }
+    .ejemplos{
+        grid-column: span 3;
+        grid-template-columns: 1fr;
+    }
+    .ejemplos .txtTextos{
+        grid-column: span 2;
+    }
+    .ejemplos h3{
+        grid-column: span 2;
+    }
+    .ejemplos:last-child{
+        grid-template-columns: 1fr;
+        grid-column: span 3;
+    }
+    .ejemplos:last-child h3{
+        grid-column: span 2;
+    }
+}
