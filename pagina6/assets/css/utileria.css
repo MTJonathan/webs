@@ -66,8 +66,12 @@
 }
 .sliderTxt p{
     font-size: 13px;
+    color: #999899;
 }
-
+.sliderTxt .precio{
+    color: white;
+    font-weight: 900;
+}
 @media(width <= 950px){
     .itemSlider{
         min-width: 50%;
