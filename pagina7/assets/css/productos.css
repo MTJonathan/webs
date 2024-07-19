@@ -24,6 +24,10 @@
     border: none;
     padding: 5px 20px;
 }
+.producto header button:hover{
+    background-color: #c7a17a;
+    color: white;
+}
 .productoContainer{
     display: grid;
     width: 90%;
