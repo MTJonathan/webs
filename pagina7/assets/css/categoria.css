@@ -1,0 +1,72 @@
+.categoria header h2{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+.categoriaContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    place-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.categoriaItem{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 23px;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.categoriaItem h3{
+    font-size: 23px;
+    font-weight: 400;
+}
+.categoriaItem h3::after {
+	content: '';
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 96px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+.categoriaItem p:hover{
+    color: #c7a17a;
+    cursor: pointer;
+}
+.categoriaItem:nth-child(1){
+    background: linear-gradient(#00000080, #00000080), url(../img/moca-category.jpg);
+}
+.categoriaItem:nth-child(2){
+    background: linear-gradient(#00000080, #00000080), url(../img/expreso-category.jpg);
+}
+.categoriaItem:nth-child(3){
+    background: linear-gradient(#00000080, #00000080), url(../img/capuchino-category.jpg);
+}
+@media(width <= 900px){
+    .categoriaContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .categoriaItem:nth-child(3){
+        grid-column: span 2;
+    }
+}
+@media(width <= 600px){
+    .categoriaContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .categoriaItem:nth-child(3){
+        grid-column: span none;
+    }
+}

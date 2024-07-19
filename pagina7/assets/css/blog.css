@@ -1,0 +1,93 @@
+.blog header h2{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 30px
+}
+.blogContainer{
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+}
+.imgBlog{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.imgBlog img{
+    width: 100%;
+    border-radius: 23px;
+}
+.blogHover{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    transform: translateX(130%);
+    transition: all 0.3s ease;
+}
+.blogItem:hover .blogHover{
+    transform: translateX(0);
+}
+.blogHover i{
+    transition: all 0.3s ease;
+}
+.blogHover i:hover{
+    background-color: #c7a17a;
+    color: white;
+}
+.blogHover i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.txtBlog{
+    display: grid;
+    gap: 15px;
+}
+.txtBlog h3{
+    font-weight: 500;
+}
+.txtBlog h3:hover{
+    color: #c7a17a;
+    cursor: pointer;
+}
+.txtBlog .fechaBlog{
+    color: #c7a17a;
+}
+.txtBlog .infoBlog{
+    font-weight: 300;
+}
+.txtBlog button{
+    width: 120px;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c7a17a;
+    color: white;
+}
+.txtBlog button:hover{
+    background-color: #000;
+}
+@media(width <= 900px){
+    .blogContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blogItem:nth-child(3){
+        width: 50%;
+        grid-column: span 2;
+    }
+}
+@media(width <= 500px){
+    .blogContainer{
+        grid-template-columns: 1fr;
+    }
+    .blogItem:nth-child(3){
+        width: 100%;
+        grid-column: span 1;
+    }
+}
