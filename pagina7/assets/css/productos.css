@@ -36,6 +36,12 @@
     gap: 23px;
     padding: 20px;
 }
+.mostrarContainer{
+    display: none;
+}
+.productoMostrar{
+    display: grid !important;
+}
 .productoItem{
     display: flex;
     position: relative;
