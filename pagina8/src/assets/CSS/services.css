@@ -1,0 +1,60 @@
+.services h2 span{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 500;
+    background-color: #b9ff66;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+.servicesContainer{
+    display: grid;
+    padding-top: 0 !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 50px;
+}
+.servicesContainer .itemServices{
+    display: grid;
+    gap: 18px;
+    background-color: #b9ff66;
+    width: 100%;
+    border-radius: 32px;
+    border: 1px solid #000;
+    border-bottom: 5px solid #000;
+    padding: 30px 25px;
+}
+.servicesContainer .itemServices h3 span{
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.servicesContainer .itemServices:first-child h3 span,
+.servicesContainer .itemServices:last-child h3 span{
+    background-color: #b9ff66;
+}
+.servicesContainer .itemServices:first-child,
+.servicesContainer .itemServices:last-child{
+    background-color: #f3f3f3;
+}
+.servicesContainer .itemServices:nth-child(3),
+.servicesContainer .itemServices:nth-child(5){
+    background-color: #191a23;
+}
+.itemServicesContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.itemServicesContainer .svgServices{
+    display: grid;
+    align-items: end;
+}
+.itemServicesContainer .svgServices:last-child{
+    justify-content: end;
+}
+.itemServicesContainer .svgServices:last-child svg{
+    width: 150px;
+    height: 100%;
+}

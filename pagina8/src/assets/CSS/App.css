@@ -1,0 +1,26 @@
+.principal .principalContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+.txtPrincipal{
+    width: 50%;
+}
+.txtPrincipal h1{
+    font-weight: 600;
+    font-size: 45px;
+}
+.txtPrincipal p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+    margin: 15px 0;
+}
+.txtPrincipal a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 13px;
+}

@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 70px;
+    align-items: center;
+}
+.header nav ul{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+}
+.header nav ul li:last-child{
+    border-radius: 13px;
+    border: 1px solid black;
+}
+.header nav ul li:last-child a{
+    display: block;
+    padding: 10px 20px;
+}
+.header nav ul li a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
