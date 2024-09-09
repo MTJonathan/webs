@@ -24,3 +24,9 @@
     padding: 18px 30px;
     border-radius: 13px;
 }
+
+@media(width <= 900px){
+    .txtPrincipal {
+        width: 100%;
+    }
+}

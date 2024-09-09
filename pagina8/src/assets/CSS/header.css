@@ -23,3 +23,19 @@
     line-height: 24px;
     color: #000;
 }
+.menuOpen {
+    display: none;
+}
+@media (width <= 860px) {
+    .header nav{
+        display: none;
+    }
+    .menuOpen {
+        display: block;
+    }
+} 
+@media (width <= 700px){
+    .header {
+        padding: 32px 32px;
+    }
+}

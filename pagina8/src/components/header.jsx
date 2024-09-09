@@ -1,5 +1,6 @@
 import '../assets/CSS/header.css'
 import { Logo } from "./iconos"
+import menuOpen from "../assets/IMG/menuOpen.svg"
 const Header = () => {
   return (
     <header className="header">
@@ -13,6 +14,7 @@ const Header = () => {
           <li><a href="">Contac Us</a></li>  
         </ul>
       </nav>
+      <span className="menuOpen"><img src={menuOpen} alt="" /></span>
     </header>
   )
 }
