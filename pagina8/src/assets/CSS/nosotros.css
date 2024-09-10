@@ -1,5 +1,6 @@
 .nosotrosContainer {
   display: flex;
+  flex-wrap: wrap;
   background-color: #f3f3f3;
   border-radius: 23px;
   align-items: center;
@@ -31,4 +32,30 @@
   width: 100%;
   height: auto;
   fill: #000;
+}
+@media (width <= 900px){
+    .nosotrosContainer {
+      flex-direction: column;
+    }
+    .nosotrosTxt {
+      width: 100%;
+    }
+    .nosotrosImg {
+      width: 80%;
+    }
+}
+@media (width <= 500px){
+    .nosotrosContainer {
+      padding: 40px 30px !important;
+    }
+    .nosotrosTxt h2 {
+      font-size: 32px;
+    }
+    .nosotrosTxt a{
+      width: 100%;
+      text-align: center;
+    }
+    .nosotrosImg{
+        display: none;
+    }
 }

@@ -66,5 +66,14 @@
 @media (width <= 650px) {
   .servicesContainer {
     grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .servicesContainer .itemServices {
+    width: 70%;
+  }
+}
+@media (width <= 500px){
+  .servicesContainer .itemServices{
+    width: 100%;
   }
 }

@@ -7,7 +7,7 @@ const Header = () => {
       <a href=""><Logo /></a>
       <nav>
         <ul>
-          <li><a href="">Sobre Nosotros</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="">FAQ</a></li>
           <li><a href="">Testimonial</a></li>

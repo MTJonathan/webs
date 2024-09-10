@@ -3,6 +3,8 @@ import Header from "./components/header"
 import Principal from "./components/principal"
 import Services from "./components/services"
 import Nosotros from "./components/nosotros"
+import Details from "./components/details"
+import Contacto from "./components/contacto"
 const App = () => {
   return (
     <main>
@@ -10,6 +12,8 @@ const App = () => {
       <Principal/>
       <Services/>
       <Nosotros/>
+      <Details/>
+      <Contacto/>
     </main>
   )
 }

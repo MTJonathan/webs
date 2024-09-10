@@ -2,7 +2,7 @@ import "../assets/CSS/nosotros.css";
 import { PodcastIlustration } from "./iconos";
 const Nosotros = () => {
   return (
-    <section className="nosotros">
+    <section className="nosotros" id="nosotros">
       <div className="nosotrosContainer contenedor">
         <article className="nosotrosTxt">
           <h2>Hacemos que las cosas sucedan</h2>
