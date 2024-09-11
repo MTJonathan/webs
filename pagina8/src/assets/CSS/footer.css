@@ -1,0 +1,80 @@
+.footer {
+    padding-bottom: 0 !important;
+}
+.footerContainer {
+  display: grid;
+  background-color: #191a23;
+  color: white;
+  border-radius: 32px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.footerContainer header {
+  display: flex;
+  margin: 80px 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerContainer header nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.footerContainer header nav ul li a {
+  color: white;
+}
+.footerContainer header img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.footerLogoRedes {
+  display: flex;
+  gap: 20px;
+}
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+}
+.footerMain .footerContacto {
+  display: grid;
+  gap: 20px;
+}
+.footerMain .footerContacto h3 {
+  font-size: 17px;
+  background-color: #b9ff66;
+  color: #191a23;
+  font-weight: 500;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 8px;
+}
+.footerMain .footerEmail{
+  display: grid;
+  width: 40%;
+  gap: 20px;
+  background-color: #292a32;
+  padding: 40px 32px;
+  border-radius: 13px;
+}
+.footerMain .footerEmail input{
+    padding: 3px 20px;
+    background-color: transparent;
+    border-radius: 13px;
+    border: 1px solid white;
+}
+ .footerMain .footerEmail input::placeholder{
+    color: white;
+}
+.footerMain .footerEmail button{
+    background-color: #b9ff66;
+    border-radius: 13px;
+    padding: 3px;
+}
+footer footer{
+    text-align: center;
+    border-top: 3px solid white;
+    margin: 0 60px;
+    padding: 32px 0 80px;
+}
