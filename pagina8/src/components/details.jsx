@@ -2,7 +2,7 @@ import "../assets/CSS/details.css";
 import { CloseQuestion, OpenQuestion } from "./iconos";
 const Details = () => {
   return (
-    <section className="details contenedor">
+    <section className="details contenedor" id="details">
       <h2>Our Working Process</h2>
 
       <details>

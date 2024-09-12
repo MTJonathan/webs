@@ -50,7 +50,7 @@ const Footer = () => {
             </p>
           </div>
           <form className="footerEmail" onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" required/>
             <button>Suscribete</button>
           </form>
         </article>

@@ -20,9 +20,9 @@ const Header = () => {
         <ul>
           <li><a onClick={handleClose} href="#nosotros">Sobre Nosotros</a></li>
           <li><a onClick={handleClose} href="#services">Servicios</a></li>
-          <li><a onClick={handleClose} href="">FAQ</a></li>
+          <li><a onClick={handleClose} href="#details">FAQ</a></li>
           <li><a onClick={handleClose} href="">Testimonial</a></li>
-          <li><a onClick={handleClose} href="">Contac Us</a></li>  
+          <li><a onClick={handleClose} href="#contacto">Contac Us</a></li>  
         </ul>
         <span onClick={handleClose} className="menuClose"><img src={menuClose}/></span>
       </nav>

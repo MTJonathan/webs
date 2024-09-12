@@ -17,6 +17,7 @@
 }
 .footerContainer header nav ul {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
   list-style: none;
@@ -64,6 +65,7 @@
   background-color: transparent;
   border-radius: 13px;
   border: 1px solid white;
+  color: white;
 }
 .footerMain .footerEmail input::placeholder {
   color: white;

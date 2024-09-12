@@ -2,7 +2,7 @@ import "../assets/CSS/contacto.css";
 import { MessageIllustration } from "./iconos";
 const Contacto = () => {
   return (
-    <section className="contacto">
+    <section className="contacto" id="contacto">
       <header className="contenedor">
         <h2>Contact us</h2>
         <p>Contacta con nosotros, para que tengas tu presencia en internet</p>
