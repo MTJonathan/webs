@@ -1,5 +1,5 @@
 .footer {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 .footerContainer {
   display: grid;
@@ -17,6 +17,7 @@
 }
 .footerContainer header nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   list-style: none;
 }
@@ -50,7 +51,7 @@
   padding: 5px;
   border-radius: 8px;
 }
-.footerMain .footerEmail{
+.footerMain .footerEmail {
   display: grid;
   width: 40%;
   gap: 20px;
@@ -58,23 +59,77 @@
   padding: 40px 32px;
   border-radius: 13px;
 }
-.footerMain .footerEmail input{
-    padding: 3px 20px;
-    background-color: transparent;
-    border-radius: 13px;
-    border: 1px solid white;
+.footerMain .footerEmail input {
+  padding: 3px 20px;
+  background-color: transparent;
+  border-radius: 13px;
+  border: 1px solid white;
 }
- .footerMain .footerEmail input::placeholder{
-    color: white;
+.footerMain .footerEmail input::placeholder {
+  color: white;
 }
-.footerMain .footerEmail button{
-    background-color: #b9ff66;
-    border-radius: 13px;
-    padding: 3px;
+.footerMain .footerEmail button {
+  background-color: #b9ff66;
+  border-radius: 13px;
+  padding: 3px;
 }
-footer footer{
-    text-align: center;
-    border-top: 3px solid white;
-    margin: 0 60px;
-    padding: 32px 0 80px;
+footer footer {
+  text-align: center;
+  border-top: 3px solid white;
+  margin: 0 60px;
+  padding: 32px 0 80px;
+}
+
+@media (width <= 950px) {
+  .footerLogoRedes {
+    display: none;
+  }
+  .footerMain .footerEmail {
+    width: 60%;
+  }
+}
+@media (width <= 750px) {
+  .footer header {
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 23px;
+  }
+  .footerMain {
+    flex-direction: column;
+    gap: 23px;
+  }
+  .footerMain .br {
+    display: none;
+  }
+  .footerMain .footerEmail {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+  .footerMain .footerEmail input {
+    padding: 18px;
+  }
+  .footerMain .footerEmail button {
+    padding: 18px;
+  }
+}
+@media (width <= 580px) {
+  .footer {
+    width: 100% !important;
+  }
+  .footerContainer {
+    border-radius: 0 !important;
+  }
+  .footerContainer header {
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+  .footerMain {
+    margin: 20px 20px;
+  }
+  .footerMain .footerEmail input {
+    padding: 10px;
+  }
+  .footerMain .footerEmail button {
+    padding: 10px;
+  }
 }

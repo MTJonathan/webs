@@ -7,6 +7,9 @@
 .txtPrincipal{
     width: 50%;
 }
+.imgPrincipal svg{
+    width: 100%;
+}
 .txtPrincipal h1{
     font-weight: 600;
     font-size: 45px;

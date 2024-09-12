@@ -41,11 +41,12 @@ const Footer = () => {
         </header>
         <article className="footerMain">
           <div className="footerContacto">
-            <h3>Contact us</h3>
+            <h3>Contact us: </h3>
             <p>Email: hola[at]hola.com</p>
             <p>Telefono: 554-433-2211</p>
             <p>
-              Dirección 1234, Calle <br /> Principal, Ciudad de <br /> México
+              Dirección 1234, Calle <br className="br" /> Principal, Ciudad de
+              <br className="br" /> México
             </p>
           </div>
           <form className="footerEmail" onSubmit={(e) => e.preventDefault()}>
